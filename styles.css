@@ -1,0 +1,74 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+* {
+    border: 2px solid red;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+nav {
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+    border-color: green;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.consult {
+    margin-left: 20px;
+}
+
+.footer-one, .footer-two, .footer-three {
+    margin: 30px;
+}
+
+.footer-one, .footer-three {
+    flex: initial;
+    width: 300px;
+}
+
+.footer-two {
+    flex: 2;
+}
+
+.hero {
+    width: 900px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
