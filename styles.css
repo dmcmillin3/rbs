@@ -3,7 +3,6 @@
 }
 
 * {
-    border: 2px solid red;
     margin: 0;
     padding: 0;
 }
@@ -17,15 +16,17 @@ nav {
     background-color: #5995DA;
     padding: 20px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 header {
     color: #5995DA;
     background-color: #D6E9FE;
+    height: 80vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-color: green;
 }
 
@@ -37,8 +38,29 @@ footer {
     align-items: center;
 }
 
-.consult {
-    margin-left: 20px;
+.card-left-container {
+    background-color: #5995DA;
+    min-height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.card-image {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-one, .footer-two, .footer-three {
@@ -66,9 +88,21 @@ footer {
 
 .logo {
     font-size: 24px;
+    margin-left: 30px;
 }
 
 .links {
+    margin-right: 30px;
     display: flex;
     justify-content: flex-end;
+    gap: 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.links li {
+    list-style: none;
 }
