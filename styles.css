@@ -14,6 +14,25 @@ html {
     box-sizing: border-box;
 }
 
+.hflex-container {
+    display: flex;
+    align-items: center;
+}
+
+.vflex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.default-spacing {
+    padding: 10vh 20vw;
+}
+
+.sp-around {
+    justify-content: space-around;
+}
+
 main {
     background-color: #F6F6F6;
 }
@@ -22,19 +41,30 @@ nav {
     color: #FFFFFF;
     background-color: #01A1B0;
     padding: 20px 0;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 header {
     color: #2F2F2F;
     background-color: #F6F6F6;
     height: 80vh;
-    display: flex;
     justify-content: center;
-    align-items: center;
     border-color: green;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image {
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+ul li {
+    width: 30%;
 }
 
 footer {
@@ -45,57 +75,46 @@ footer {
     align-items: center;
 }
 
-.card-left-container {
-    background-color: #5995DA;
-    min-height: 20vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.challenges {
+    gap: 3vh;
+    background-color: #01A1B0;
 }
 
-.card {
-    background-color: #fff;
-    min-height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+.oneLiner {
+    font-weight: bold;
+    text-align: center;
+    gap: 3vh;
 }
 
-.card-image {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.oneLiner p {
+    width: 80%;
 }
 
-.card-plan {
-    display: flex;
+.card-container {
     justify-content: center;
-    width: 100%;
+    background-color: #01A1B0;
 }
 
 .card-plan-item {
-    display: flex;
     justify-content: space-around;
     background-color: #FFFFFF;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
     padding: 40px 160px;
     width: 90%;
     border-radius: 25px;
+    font-weight: bold;
 }
 
 .card-plan-item:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 
 .consult-button {
     background-color: #FDB140;
-    padding: 4px 8px;
+    padding: 8px 16px;
     color: #2F2F2F;
-    margin-top: 40px;
+    border-radius: 15px;
 }
 
 .footer-one, .footer-two, .footer-three {
@@ -112,17 +131,15 @@ footer {
 }
 
 .hero {
-    min-width: 80%;
-    height: 300px;
+    height: 10vh;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;;
-    flex-direction: column;
+    gap: 3vh;
+    position: relative;
 }
 
 .logo {
     font-size: 24px;
+    font-weight: bold;
     margin-left: 30px;
 }
 
@@ -140,16 +157,4 @@ footer {
 
 .links li {
     list-style: none;
-}
-
-.message {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.message ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
