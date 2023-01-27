@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *, *::before, *::after {
@@ -12,25 +15,6 @@
 
 html {
     box-sizing: border-box;
-}
-
-.hflex-container {
-    display: flex;
-    align-items: center;
-}
-
-.vflex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.default-spacing {
-    padding: 10vh 20vw;
-}
-
-.sp-around {
-    justify-content: space-around;
 }
 
 main {
@@ -75,35 +59,9 @@ footer {
     align-items: center;
 }
 
-.challenges {
-    gap: 3vh;
-    background-color: #01A1B0;
-}
-
-.oneLiner {
-    font-weight: bold;
-    text-align: center;
-    gap: 3vh;
-}
-
-.oneLiner p {
-    width: 80%;
-}
-
 .card-container {
     justify-content: center;
     background-color: #01A1B0;
-}
-
-.card-plan-item {
-    justify-content: space-around;
-    background-color: #FFFFFF;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    transition: 0.3s;
-    padding: 40px 160px;
-    width: 90%;
-    border-radius: 25px;
-    font-weight: bold;
 }
 
 .card-plan-item:hover {
@@ -131,23 +89,9 @@ footer {
 }
 
 .hero {
-    height: 10vh;
     text-align: center;
     gap: 3vh;
     position: relative;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 30px;
-}
-
-.links {
-    margin-right: 30px;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
 }
 
 .links a {
