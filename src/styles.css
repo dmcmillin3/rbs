@@ -28,6 +28,10 @@ nav {
   justify-content: space-between;
 }
 
+.primary-bg {
+  background-color: #01a1b0;
+}
+
 header {
   color: #2f2f2f;
   background-color: #f6f6f6;
