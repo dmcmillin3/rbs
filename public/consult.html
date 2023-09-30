@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <a href="/">
+      <a href="index.html">
         <img src="img/rbs_horLogo_black.png" width="200px" class="rounded-md" />
       </a>
       <nav class="flex items-center">
@@ -37,16 +37,21 @@
         <div
           class="hero-text flex flex-col justify-center items-center gap-4 text-center z-10 text-2xl"
         >
-          <h1>Get customized financial and operational solutions</h1>
+          <h1>Schedule your FREE consult by completing this form!</h1>
           <h2>
-            Schedule a consult so you can run a successful business and achieve
+            We want to partner with you so that you can run a successful business and achieve
             your life goals.
           </h2>
-          <a
-            href="consult.html"
-            class="consult-button text-lg"
-            >Schedule a Consult</a
-          >
+          
+          <form action="https://formsubmit.co/c91f0257115ffe1399eb8dc82ad28a82" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="30" placeholder="Share about your goals and expectations for this consult."></textarea><br>
+            <button class="consult-button" type="submit">Submit</button>
+          </form>
         </div>
       </section>
       <section class="row1">
