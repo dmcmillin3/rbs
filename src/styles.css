@@ -41,8 +41,21 @@ main section {
   display: flex;
 }
 
+form input, form textarea {
+  margin-bottom: 0.5em;
+}
+
 .hero {
-  background-image: url('img/hero.jpg');
+  background-image: url('img/L80.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.consult_hero {
+  background-image: url('img/L56.jpg');
   background-size: cover;
   background-position: center;
   justify-content: center;
@@ -51,7 +64,7 @@ main section {
 }
 
 .hero-text {
-  background-color: rgba(246,246,246,0.9);
+  background-color: rgba(246,246,246,0.7);
   border-radius: 15px;
   padding: 40px 20px;
   max-width: 80%;
@@ -144,4 +157,58 @@ footer {
 
 .links li {
   list-style: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text {
+    padding: 20px 10px;
+  }
+
+  .row1, .row2 div {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .row2 {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .row2 a {
+    text-align: center;
+  }
+
+  .row2 div h3 {
+    flex-basis: 95%;
+  }
+
+  .row2 p {
+    width: 90%;
+  }
+
+  .row3 {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  div iframe {
+    width: 300px;
+    height: 169px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  form input, form textarea {
+    width: 90%;
+  }
+
+  .consult_hero {
+    height: 175vh;
+  }
 }
