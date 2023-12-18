@@ -17,8 +17,13 @@ html {
   box-sizing: border-box;
 }
 
-main {
+body {
   background-color: #f6f6f6;
+}
+
+div ul li {
+  list-style: disc;
+  margin-left: 2rem;
 }
 
 nav {
